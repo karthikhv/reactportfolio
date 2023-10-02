@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/reactportfolio/static/css/main.ff5fc301.css",
+    "main.js": "/reactportfolio/static/js/main.fb84c23c.js",
+    "static/media/sss.jpg": "/reactportfolio/static/media/sss.3d6b3fa35233f29cc6ee.jpg",
+    "static/media/proj6.png": "/reactportfolio/static/media/proj6.e4c13e5ff707272d259c.png",
+    "static/media/proj3.jpg": "/reactportfolio/static/media/proj3.2b60f134b94583c6f77e.jpg",
+    "static/media/react2.jpg": "/reactportfolio/static/media/react2.c1b9e2c6b1c0b09aac2b.jpg",
+    "static/media/imh1.jpg": "/reactportfolio/static/media/imh1.1b8ba2e98943c4a3fc89.jpg",
+    "static/media/react.jpg": "/reactportfolio/static/media/react.cc650729268918ba7cc2.jpg",
+    "static/media/internship.jpg": "/reactportfolio/static/media/internship.0b758d8f4f237dc50d6c.jpg",
+    "static/media/trek.jpg": "/reactportfolio/static/media/trek.2f321d17efa948717247.jpg",
+    "static/media/final.png": "/reactportfolio/static/media/final.061ad36302532a0d00f7.png",
+    "static/media/namma.jpg": "/reactportfolio/static/media/namma.b18028cf3ca4e74cbb48.jpg",
+    "static/media/kodnest.jpg": "/reactportfolio/static/media/kodnest.de3c0ea0ad7d295bb0f1.jpg",
+    "static/media/SQL.jpg": "/reactportfolio/static/media/SQL.2d210b56219cf56119a5.jpg",
+    "static/media/python.jpg": "/reactportfolio/static/media/python.aefa41a298e88ab1632b.jpg",
+    "static/media/proj4.jpg": "/reactportfolio/static/media/proj4.752475c15ff87dab15e2.jpg",
+    "static/media/proj2.jpg": "/reactportfolio/static/media/proj2.6f55659af8423ca72f95.jpg",
+    "static/media/proj5.png": "/reactportfolio/static/media/proj5.022e8230f1cfa043cd6a.png",
+    "index.html": "/reactportfolio/index.html",
+    "main.ff5fc301.css.map": "/reactportfolio/static/css/main.ff5fc301.css.map",
+    "main.fb84c23c.js.map": "/reactportfolio/static/js/main.fb84c23c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff5fc301.css",
+    "static/js/main.fb84c23c.js"
+  ]
+}
