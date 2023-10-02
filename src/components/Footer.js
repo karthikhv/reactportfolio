@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Footer.css";
-import { FaFacebook, FaHome, FaInstagram, FaLinkedin, FaMailBulk, FaPhone } from 'react-icons/fa';
+import { FaGithub,FaFacebook, FaHome, FaInstagram, FaLinkedin, FaMailBulk, FaPhone } from 'react-icons/fa';
 const Footer = () => {
   return (
     <div className="footer">
@@ -26,11 +26,19 @@ const Footer = () => {
             Social media
           </h4>
           <div className="social">
-            <p>I am an organized individual seeking an entry level position.Can work well under pressure and make the best of any situation . Interested in the field of Computer Science .</p>
-              <FaFacebook to='/' size={30} style= {{color:'white',marginRight:"25px"}} />
-              <FaLinkedin size={30} style= {{color:'white',marginRight:"25px"}} />
-              <FaInstagram size={30} style= {{color:'white',marginRight:"25px"}} />
-          </div>
+              <a href="https://www.facebook.com/karthik_hv" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook size={30} style={{color:'white', marginRight:"25px"}} />
+              </a>
+              <a href="https://www.linkedin.com/in/karthikhv018/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin size={30} style={{color:'white', marginRight:"25px"}} />
+              </a>
+              <a href="https://www.instagram.com/karthik_hv/" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram size={30} style={{color:'white', marginRight:"25px"}} />
+              </a>
+              <a href="https://github.com/karthikhv" target="_blank" rel="noopener noreferrer">
+                  <FaGithub size={30} style={{color:'white', marginRight:"25px"}} />
+              </a>
+            </div>
         </div>
       </div>
     </div>

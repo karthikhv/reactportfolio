@@ -8,12 +8,16 @@
    
     
   }
+  *{
+    cursor: none;margin: 0;  padding: 0;
+  }
   body{
      background: black;
   }
   .btn{
     padding: 12px 12px;
     font-size: 15px;
+    cursor: none;
   }
   h1,h4, a, p{
     color: white;
@@ -25,6 +29,7 @@
   .btn{
     padding: 12px 32px;
     font-size: 15px;
+    cursor: none;
     text-transform: uppercase;
     background: greenyellow;
     color: black;

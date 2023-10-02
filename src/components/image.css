@@ -1,0 +1,12 @@
+.image_contain {
+  width: 100%; /* This will make the container span the entire width of its parent */
+  display: flex; /* This will help center the image */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; 
+  padding: 20px; 
+}
+
+.my-face {
+  max-width: 100%; /* This ensures the image does not overflow the container */
+  height: auto; /* Keeps the aspect ratio */
+}

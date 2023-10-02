@@ -5,17 +5,17 @@ const Workcard = (props) => {
   return (
     <>
       <div className="project-card">
-            <img src={props.imgsrc} alt="img" />
+            <img className='img-size' src={props.imgsrc} alt="img" />
             <h2 className="project-title">{props.title}</h2>
             <div className="pro-details">
-              <p>{props.text}</p>
+              <p className='bl'>{props.text}</p>
               <div className="pro-btns">
                 <NavLink to={props.view}
-                className="btn">
+                className="btn no-cursor">
                   View
                 </NavLink>
                 <NavLink to={props.source}
-                className="btn">
+                className="btn no-cursor ">
                   Sourcecode
                 </NavLink>
               </div>

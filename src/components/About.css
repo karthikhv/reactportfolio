@@ -1,12 +1,13 @@
 .about{
   width: 100%;
-  margin: 3rem 0;
+  margin: 0.8rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   height:100%;
 }
+
 .about .left{
   text-align: center;
   margin: auto;
@@ -31,6 +32,7 @@
 .about .right{ 
   max-width: 700px;
 }
+
 .right .img-container{
   display: grid;
   grid-template-columns: repeat(12,1fr);

@@ -1,16 +1,27 @@
-.mask{
+* {
+  box-sizing: border-box;
+}
+
+.mask {
   width: 100%;
   height: 100vh;
   position: relative;
+  transition: opacity 0.3s;
 }
-.into-img{
+
+.into-img {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  object-fit:cover;
+  object-fit: cover;
 }
-.mask::after{
+
+.no-cursor {
+  cursor: none;
+}
+
+.mask::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -19,43 +30,79 @@
   left: 0;
   background-color: black;
   opacity: 0.65;
+  transition: opacity 0.3s;
 }
-.hero{
+
+
+.mask:hover::after {
+  opacity: 0.5; /* Slight reduction in opacity on hover */
+}
+
+.hero {
   width: 100%;
   height: 100%;
 }
-.hero .content{
+
+.hero .content {
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
-  left: 50%;
+  left: 25%;  /* Initial left position */
   text-align: center;
+  transition: transform 2s, left 2s; /* adjusted duration to 2 seconds */
 }
-.hero .content h1
-{
+
+.hero:hover .content {
+  left: 50%;  /* Return to center on hover */
+}
+
+
+.hero .content h1 {
   font-size: 50px;
-  padding: 25PX ;
+  padding: 25px;
+  transition: color 0.3s;
 }
-.hero .content p
-{
+
+.hero .content p {
   font-size: 23px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 25PX ;
+  padding: 25px;
+  transition: color 0.3s;
 }
 
-.content .btn{
-  margin:10px 5px;
+.loader {
+  width: 10px;
+  height: 10px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background: white;
 }
-@media screen and(max-width:640px) {
-  .hero .content h1
-{
-  font-size: 40px;
-  padding: 25PX ;
+
+.content .btn {
+  margin: 10px 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
-.hero .content p
-{
-  font-size: 23px;
-  text-transform: uppercase;
+
+.content .btn:hover {
+  background-color: #333;  /* Darken background on hover */
+  color: white;
+  transform: translateY(-5px);  /* Slight move up effect */
 }
+
+@media screen and (max-width: 640px) {
+  .hero .content {
+    left: 50%;  /* Reset to original position */
+    transition: none;  /* Disable the transition */
+  }
+
+  .hero .content h1 {
+    font-size: 40px;
+    padding: 25PX;
+  }
+
+  .hero .content p {
+    font-size: 18px;  /* Adjusted the font size for smaller screens */
+    padding: 15PX;    /* Adjusted padding for smaller screens */
+  }
 }

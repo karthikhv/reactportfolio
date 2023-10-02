@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 import "./Navbar.css"
 import React, { useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
@@ -17,28 +17,32 @@ const Navbar = () => {
     window.addEventListener("scroll",changecolor)
 
   return (
-      <div className={color? "header header-bg" : "header"}>
-        <Link to = "/">
-           <h1>Portfolio</h1>
-        </Link>
-        <ul className={click? "nav-menu active":"nav-menu" }>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-            </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-            </li>
-          <li>
-            <Link to="/project">Projects</Link>
-            </li>
-        </ul>
-        <div className="hamburger" onClick={HandleClick}>
-          {click ?(<FaTimes size={20} style={{color:"white"}}/>):(<FaBars size={20} style={{color:"white"}}/>) }
-        </div>
-      </div>
+    <div className={color? "header header-bg" : "header"}>
+    <NavLink exact to = "/" activeClassName="activitytab">
+       <h1>Portfolio</h1>
+    </NavLink>
+    <ul className={click? "nav-menu active":"nav-menu" }>
+      
+      <li>
+        <NavLink exact to="/" activeClassName="activitytab">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/about" activeClassName="activitytab">About</NavLink>
+        </li>
+      <li>
+        <NavLink to="/project" activeClassName="activitytab">Projects</NavLink>
+        </li>
+        <li>
+        <NavLink to="/certificates" activeClassName="activitytab">Certificates</NavLink>
+        </li>
+        <li>
+        <NavLink to="/contact" activeClassName="activitytab">Contact</NavLink>
+        </li>
+    </ul>
+    <div className="hamburger" onClick={HandleClick}>
+      {click ?(<FaTimes size={20} style={{color:"white"}}/>):(<FaBars size={20} style={{color:"white"}}/>) }
+    </div>
+  </div>
   )
 }
 

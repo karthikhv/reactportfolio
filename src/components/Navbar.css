@@ -5,7 +5,8 @@
 }
 .nav-menu li{
   padding: 0 15px;
-  padding-right: px;
+  padding-right: 25px;
+  margin-right: 10px;
 }
 .nav-menu :hover{
   color: greenyellow;
@@ -34,6 +35,25 @@
   display: none;
   cursor: pointer;
 }
+/* Navbar.css */
+
+.activitytab {
+  /* Your active styling here e.g.: */
+  color: red;
+  font-weight: bold;
+  /* ... other styles ... */
+}
+.activitytab {
+  /* Your active styling here: */
+  text-decoration: underline;  /* Add underline to active link */
+  /* ... other styles ... */
+}
+
+/* Optional: If you also want to show the underline when hovering over the link */
+.nav-menu li:hover a {
+  text-decoration: underline;
+}
+
 
 @media screen and (max-width: 940px){
   .nav-menu{
@@ -42,6 +62,7 @@
     align-items: center;
     width: 100%;
     height: 100vh;
+    
     background: black;
     position: absolute;
     top: 0;

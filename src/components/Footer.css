@@ -17,6 +17,9 @@
   flex-direction: column;
   padding: 15px;
 }
+.left button{
+  margin-bottom: 30px;
+}
 .location{
   display: flex;
   margin-bottom: 30px;
@@ -37,7 +40,13 @@
 }
 .social{
   margin-top: 15px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
+.social a:hover {
+  transform: scale(1.1) !important;
+}
+
 .social p{
   text-align: start;
   font-size: 18px;
